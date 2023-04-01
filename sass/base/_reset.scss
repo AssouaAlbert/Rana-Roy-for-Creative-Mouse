@@ -1,0 +1,21 @@
+.display {
+  &--f {
+    display: flex;
+  }
+}
+.flex-d {
+&--c{
+    flex-direction: column;
+}
+}
+.align {
+  &--c {
+    align-items: center;
+  }
+  &--r {
+    align-items: flex-end;
+  }
+  &--l {
+    align-items: flex-start;
+  }
+}

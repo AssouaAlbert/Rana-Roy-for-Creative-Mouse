@@ -1,0 +1,45 @@
+.menu {
+  padding-top: 1rem;
+  @include displayFlexCenter;
+  height: 7rem;
+  &__logo {
+    @include displayFlexCenter;
+    justify-content: flex-end;
+    & img {
+      height: 6rem;
+      margin-right: 1rem;
+    }
+    &-container {
+      height: 100%;
+      flex-grow: 2;
+    }
+  }
+  &__navigation {
+    flex-grow: 1;
+  }
+  &__address {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $primary-main;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+}
+
+.address {
+  @include displayFlexCenter;
+  margin: auto 3rem;
+  &__location {
+    margin: auto;
+  }
+}
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    width: 10rem;
+    @include displayFlexCenter;
+  }
+}

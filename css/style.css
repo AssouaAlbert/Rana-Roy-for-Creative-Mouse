@@ -1,0 +1,267 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+section {
+  padding: 5rem 3rem;
+  min-height: 75vh; }
+
+body {
+  background: #0d121E;
+  min-height: 100vh; }
+
+.navigation__link {
+  color: #fff8ee;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-align: center; }
+
+h1.title {
+  font-size: 6rem; }
+
+h2.subtitle {
+  font-size: 3rem; }
+  h2.subtitle--white {
+    color: white; }
+
+h4.secondary-heading {
+  font-size: 2.4remrem;
+  font-family: 'Courier New', Courier, monospace; }
+  h4.secondary-heading--primary {
+    color: #ae8858; }
+
+p {
+  margin: 2rem auto; }
+  p.paragraph--white {
+    color: white; }
+
+.display--f {
+  display: flex; }
+
+.flex-d--c {
+  flex-direction: column; }
+
+.align--c {
+  align-items: center; }
+
+.align--r {
+  align-items: flex-end; }
+
+.align--l {
+  align-items: flex-start; }
+
+.info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .info__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0.5rem auto; }
+    .info__item i {
+      color: #ae8858;
+      padding: 0 0.5rem;
+      padding: 0 0.5rem; }
+    .info__item a {
+      font-family: 'Courier New', Courier, monospace;
+      text-decoration: none;
+      color: inherit; }
+    .info__item--white {
+      color: white; }
+
+.play-button img {
+  width: 15rem; }
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .social-media--plain {
+    font-size: 1.8rem; }
+  .social-media__item {
+    padding: 0 1rem; }
+    .social-media__item a {
+      color: #2f2f3a; }
+
+.button {
+  display: inline-block; }
+  .button a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .button a span {
+      font-weight: 400; }
+  .button-primary {
+    background-color: #ae8858; }
+  .button--v-align {
+    margin: auto; }
+
+.menu {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem; }
+  .menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end; }
+    .menu__logo img {
+      height: 6rem;
+      margin-right: 1rem; }
+    .menu__logo-container {
+      height: 100%;
+      flex-grow: 2; }
+  .menu__navigation {
+    flex-grow: 1; }
+  .menu__address {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ae8858;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; }
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 3rem; }
+  .address__location {
+    margin: auto; }
+
+.navigation__list {
+  list-style: none;
+  display: flex; }
+
+.navigation__item {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero {
+  background: linear-gradient(56deg, #0d121e 38%, rgba(13, 18, 30, 0.916889) 59%, rgba(13, 18, 30, 0.402685) 100%), url(../img/hair-spies-5P_DABYHK1A-unsplash.jpg);
+  background-size: 100%;
+  background-position: top 30% right;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .hero__cta {
+    height: 70%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .hero__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    height: 100%; }
+  .hero__welcome {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    border-left: 1px solid #ae8858; }
+    .hero__welcome-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start; }
+  .row-medium {
+    max-width: 90rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; }
+  .row .col-1-of-2 {
+    flex-grow: 1; }
+  .row .col-1-of-3 {
+    flex-grow: 1; }
+  .row .col-2-of-3 {
+    flex-grow: 2; }
+  .row .col-1-of-4 {
+    flex-grow: 1; }
+  .row .col-2-of-4 {
+    flex-grow: 2; }
+  .row .col-3-of-4 {
+    flex-grow: 3; }
+
+.about__address {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  margin-right: 4rem; }
+  .about__address-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ae8858;
+    height: 6rem;
+    width: 5rem;
+    margin: auto 1rem;
+    border-radius: 10px 10px 0 10px; }
+    .about__address-icon i {
+      font-size: 3rem;
+      padding: 1rem;
+      color: white; }

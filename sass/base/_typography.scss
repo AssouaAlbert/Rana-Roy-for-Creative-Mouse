@@ -1,0 +1,41 @@
+// @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.navigation {
+  &__link {
+    color: $white-main;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+h1.title {
+  font-size: 6rem;
+}
+
+h2 {
+  &.subtitle {
+    font-size: 3rem;
+    &--white {
+      color: white;
+    }
+  }
+}
+
+h4 {
+  &.secondary-heading {
+    font-size: 2.4remrem;
+    font-family: 'Courier New', Courier, monospace;
+    &--primary {
+      color: $primary-main;
+    }
+  }
+}
+
+p {
+  margin: 2rem auto;
+  &.paragraph--white {
+    color: white;
+  }
+}

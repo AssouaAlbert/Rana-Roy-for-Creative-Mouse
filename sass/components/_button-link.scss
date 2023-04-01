@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  & a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+    @include displayFlexCenter;
+    color: white;
+    & span {
+      font-weight: 400;
+    }
+  }
+  &-primary {
+    background-color: $primary-main;
+  }
+  &--v-align {
+margin: auto;
+  }
+}

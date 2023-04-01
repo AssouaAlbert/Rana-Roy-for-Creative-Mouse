@@ -1,0 +1,13 @@
+.social-media {
+    list-style: none;
+    @include displayFlexCenter;
+    &--plain {
+        font-size: 1.8rem;
+    }
+    &__item {
+        padding: 0 1rem;
+        & a {
+            color: $black-secondary;
+        }
+    }
+}
