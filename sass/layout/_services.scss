@@ -1,6 +1,7 @@
 .services {
   position: relative;
   background-color: $black-tertiary;
+  padding-bottom: 5rem;
   &__background {
     position: absolute;
     height: 100%;
@@ -16,10 +17,18 @@
     z-index: 1;
     top: 0;
     left: 19%;
+    margin-top: 5.55%;
   }
   &__title {
     & h2 span {
-        color: $primary-main;
+      color: $primary-main;
     }
+  }
+  &__cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    position: relative;
   }
 }

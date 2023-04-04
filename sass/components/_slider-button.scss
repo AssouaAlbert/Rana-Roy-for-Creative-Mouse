@@ -1,0 +1,23 @@
+.slider-button {
+  // display: flex;
+  &:last-child {
+    margin-top: 1.5rem;
+  }
+  & * {
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-weight: 900;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  &__left {
+    background: $primary-main;
+    display: inline-block;
+  }
+  &__right {
+    background: $black-main;
+    color: $primary-main;
+    display: inline-block;
+  }
+}

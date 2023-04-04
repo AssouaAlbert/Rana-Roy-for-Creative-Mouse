@@ -25,10 +25,19 @@ h2 {
 
 h4 {
   &.secondary-heading {
-    font-size: 2.4remrem;
+    font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     &--primary {
       color: $primary-main;
+    }
+  }
+}
+h5 {
+  &.tertiary-heading {
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+    &--primary {
+      color: $white-main;
     }
   }
 }

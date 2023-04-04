@@ -1,0 +1,41 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $black-main;
+  width: 20rem;
+  padding: 1rem;
+  &__icon {
+    margin-bottom: 1rem;
+    & i {
+      font-size: 5rem;
+      color: $primary-main;
+    }
+  }
+  &__description {
+    color: $white-main;
+    text-align: start;
+    h5 {
+    }
+    & p {
+      margin: 0.5rem auto;
+      padding-right: 6rem;
+    }
+  }
+  &__price {
+    color: $primary-main;
+    font-weight: 800;
+    font-size: 4rem;
+    & span {
+      font-size: 2rem;
+    }
+  }
+  &__cta {
+    margin-top: 1rem;
+    & a {
+      text-decoration: none;
+      color: $primary-main;
+      border-bottom: 1px solid $primary-main;
+    }
+  }
+}

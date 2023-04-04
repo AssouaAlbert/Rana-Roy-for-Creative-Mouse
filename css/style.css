@@ -34,7 +34,7 @@ html {
 
 section {
   padding: 5rem 3rem;
-  min-height: 75vh; }
+  min-height: 90vh; }
 
 body {
   background: #0d121E;
@@ -56,10 +56,16 @@ h2.subtitle {
     color: white; }
 
 h4.secondary-heading {
-  font-size: 2.4remrem;
+  font-size: 1rem;
   font-family: 'Courier New', Courier, monospace; }
   h4.secondary-heading--primary {
     color: #ae8858; }
+
+h5.tertiary-heading {
+  font-size: 0.8rem;
+  font-family: 'Courier New', Courier, monospace; }
+  h5.tertiary-heading--primary {
+    color: #fff8ee; }
 
 p {
   margin: 2rem auto; }
@@ -153,6 +159,56 @@ p {
   .working-hours p {
     margin: 0.5rem 0 0 0;
     display: inline-block; }
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #0d121E;
+  width: 20rem;
+  padding: 1rem; }
+  .service-card__icon {
+    margin-bottom: 1rem; }
+    .service-card__icon i {
+      font-size: 5rem;
+      color: #ae8858; }
+  .service-card__description {
+    color: #fff8ee;
+    text-align: start; }
+    .service-card__description p {
+      margin: 0.5rem auto;
+      padding-right: 6rem; }
+  .service-card__price {
+    color: #ae8858;
+    font-weight: 800;
+    font-size: 4rem; }
+    .service-card__price span {
+      font-size: 2rem; }
+  .service-card__cta {
+    margin-top: 1rem; }
+    .service-card__cta a {
+      text-decoration: none;
+      color: #ae8858;
+      border-bottom: 1px solid #ae8858; }
+
+.slider-button:last-child {
+  margin-top: 1.5rem; }
+
+.slider-button * {
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-weight: 900; }
+  .slider-button *:not(:last-child) {
+    margin-right: 0.5rem; }
+
+.slider-button__left {
+  background: #ae8858;
+  display: inline-block; }
+
+.slider-button__right {
+  background: #0d121E;
+  color: #ae8858;
+  display: inline-block; }
 
 .menu {
   padding-top: 1rem;
@@ -294,7 +350,8 @@ p {
 
 .services {
   position: relative;
-  background-color: #080C14; }
+  background-color: #080C14;
+  padding-bottom: 5rem; }
   .services__background {
     position: absolute;
     height: 100%;
@@ -308,6 +365,13 @@ p {
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 19%; }
+    left: 19%;
+    margin-top: 5.55%; }
   .services__title h2 span {
     color: #ae8858; }
+  .services__cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    position: relative; }
