@@ -81,6 +81,9 @@ p {
 .align--l {
   align-items: flex-start; }
 
+.text-m-l {
+  font-size: 120%; }
+
 .info {
   list-style: none;
   display: flex;
@@ -135,6 +138,21 @@ p {
     background-color: #ae8858; }
   .button--v-align {
     margin: auto; }
+  .button-secondary {
+    background-color: #000; }
+
+.working-hours {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  justify-content: flex-start; }
+  .working-hours h5 {
+    font-size: 180%;
+    color: #ae8858;
+    display: inline-block; }
+  .working-hours p {
+    margin: 0.5rem 0 0 0;
+    display: inline-block; }
 
 .menu {
   padding-top: 1rem;
@@ -244,24 +262,42 @@ p {
   .row .col-3-of-4 {
     flex-grow: 3; }
 
-.about__address {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
-  height: 100%;
-  margin-right: 4rem; }
-  .about__address-icon {
+.about {
+  max-width: 114rem; }
+  .about__address {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #ae8858;
-    height: 6rem;
-    width: 5rem;
-    margin: auto 1rem;
-    border-radius: 10px 10px 0 10px; }
-    .about__address-icon i {
-      font-size: 3rem;
-      padding: 1rem;
-      color: white; }
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, monospace;
+    height: 100%;
+    margin-right: 4rem; }
+    .about__address-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ae8858;
+      height: 6rem;
+      width: 5rem;
+      margin: auto 1rem;
+      border-radius: 10px 10px 0 10px; }
+      .about__address-icon i {
+        font-size: 3rem;
+        padding: 1rem;
+        color: white; }
+  .about__description {
+    width: 60%;
+    color: white;
+    margin: auto; }
+  .about__working-hours {
+    display: flex; }
+
+.services {
+  display: relative; }
+  .services .background {
+    position: absolute;
+    height: 10vh;
+    width: 33vw;
+    background-image: url("../img/jose-pinto-yG0Z9OwXWks-unsplash.jpg");
+    top: 0;
+    right: 0; }

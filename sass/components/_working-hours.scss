@@ -1,0 +1,15 @@
+.working-hours {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    justify-content: flex-start;
+    & h5 {
+font-size: 180%;
+color: $primary-main;
+display: inline-block;
+    }
+    & p {
+        margin: 0.5rem 0 0 0;
+        display: inline-block;
+    }
+}

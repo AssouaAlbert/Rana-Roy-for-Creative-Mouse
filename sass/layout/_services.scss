@@ -1,0 +1,12 @@
+.services {
+  display: relative;
+
+  & .background {
+    position: absolute;
+    height: 10vh;
+    width: 33vw;
+    background-image: url("../img/jose-pinto-yG0Z9OwXWks-unsplash.jpg");
+    top: 0;
+    right: 0;
+  }
+}
