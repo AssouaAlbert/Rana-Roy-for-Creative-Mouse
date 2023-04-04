@@ -293,11 +293,21 @@ p {
     display: flex; }
 
 .services {
-  display: relative; }
-  .services .background {
+  position: relative;
+  background-color: #080C14; }
+  .services__background {
     position: absolute;
-    height: 10vh;
-    width: 33vw;
-    background-image: url("../img/jose-pinto-yG0Z9OwXWks-unsplash.jpg");
+    height: 100%;
+    width: 33.333%;
+    background: transparent url("../img/jose-pinto-yG0Z9OwXWks-unsplash.jpg");
+    background-size: cover;
     top: 0;
-    right: 0; }
+    right: 0;
+    z-index: 0; }
+  .services__container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 19%; }
+  .services__title h2 span {
+    color: #ae8858; }
