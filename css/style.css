@@ -55,20 +55,27 @@ h2.subtitle {
   h2.subtitle--white {
     color: white; }
 
+h2 span {
+  color: #ae8858; }
+
 h4.secondary-heading {
   font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace; }
+  font-family: "Courier New", Courier, monospace; }
   h4.secondary-heading--primary {
     color: #ae8858; }
 
 h5.tertiary-heading {
-  font-size: 0.8rem;
-  font-family: 'Courier New', Courier, monospace; }
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace; }
   h5.tertiary-heading--primary {
     color: #fff8ee; }
+  h5.tertiary-heading--line {
+    position: relative;
+    display: inline-block; }
 
 p {
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  color: white; }
   p.paragraph--white {
     color: white; }
 
@@ -375,3 +382,70 @@ p {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5rem;
     position: relative; }
+
+.solutions {
+  padding-top: 5.55%;
+  width: 114rem; }
+  .solutions__title {
+    display: flex; }
+    .solutions__title .title-line {
+      height: 1px;
+      border-top: 1px solid #ae8858;
+      flex-grow: 1;
+      align-self: center;
+      margin-left: 1rem; }
+  .solutions .container {
+    display: grid;
+    grid-template-columns: 44.44% 56.66%;
+    width: 68.4rem;
+    margin: auto;
+    column-gap: 2rem; }
+  .solutions__business-hours {
+    display: flex;
+    position: relative;
+    flex-direction: column; }
+  .solutions__working-hours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem; }
+    .solutions__working-hours * {
+      font-size: 40%; }
+    .solutions__working-hours p {
+      color: #fff8ee;
+      font-size: 0.4rem; }
+  .solutions__image {
+    width: 100%;
+    margin-top: 1.5rem; }
+    .solutions__image figure {
+      position: relative; }
+    .solutions__image img {
+      width: 100%; }
+    .solutions__image figcaption {
+      position: absolute;
+      font-size: 8rem;
+      z-index: 2;
+      bottom: -5%;
+      right: -57%;
+      font-weight: bolder;
+      color: rgba(100, 100, 100, 0.3);
+      line-height: 90%; }
+  .solutions__best {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .solutions__best ul {
+      list-style: none; }
+      .solutions__best ul li {
+        display: flex; }
+        .solutions__best ul li:not(:last-child) {
+          margin-bottom: 1.5rem; }
+        .solutions__best ul li i {
+          display: inline-block;
+          color: #ae8858;
+          margin-top: 0.2rem; }
+        .solutions__best ul li p {
+          margin: 0;
+          padding-left: 1rem; }
+    .solutions__best .button {
+      margin-top: 5rem;
+      justify-self: flex-start; }
